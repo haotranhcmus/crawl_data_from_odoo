@@ -14,10 +14,13 @@ https://code.visualstudio.com/docs/python/python-quick-start
 ===================Hướng dẫn sử dụng=======================
 
 Bước 1: Chạy file crawl.py để thu thập dữ liệu từ trang quiz odoo gồm toàn bộ văn bản có trong trang này.
-      1. Nhập đường dẫn tới trang quiz Odoo VD: https://www.odoo.com/vi_VN/slides/slide/chart-of-accounts-6834?fullscreen=1&quiz=1#
-      2. Lưu ý: Đường dẫn này phải dẫn đến trang như hình sau: 
+      
+i. Nhập đường dẫn tới trang quiz Odoo VD: https://www.odoo.com/vi_VN/slides/slide/chart-of-accounts-6834?fullscreen=1&quiz=1#
+      
+ii. Lưu ý: Đường dẫn này phải dẫn đến trang như hình sau: 
             ![Alt text](images/path_to_quiz.png)
-      3. Khi thực thi xong chương trình sẽ trả ra kết quả, nếu kết quả là "Success!!!" thì ta sẽ chuyển sang Bước 2. Ngược lại nếu kết quả được in ra màn hình là "Failure!!!" thì có thể là bạn đã nhập đường dẫn chưa đúng hoặc do kết nối mạng của bạn không ổn định không thể truy cập tới trang có đường dẫn ở trên.
+
+iii. Khi thực thi xong chương trình sẽ trả ra kết quả, nếu kết quả là "Success!!!" thì ta sẽ chuyển sang Bước 2. Ngược lại nếu kết quả được in ra màn hình là "Failure!!!" thì có thể là bạn đã nhập đường dẫn chưa đúng hoặc do kết nối mạng của bạn không ổn định không thể truy cập tới trang có đường dẫn ở trên.
 Bước 2: Chạy file input.py để nhập kết quả và lưu vào file data.txt và data.csv.
       1. Nhập đường dẫn tới trang quiz như ở bước 1.
       2. Nhập đáp án. Ví dụ đáp án của bạn là 1A 2B 3C thì bạn chỉ cần nhập abc.
