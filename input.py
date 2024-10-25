@@ -143,3 +143,4 @@ with open('data.txt', 'a', encoding='utf-8') as f:
         # Chỉ ghi dòng nếu cột B hoặc C có nội dung
         if b_value or c_value:
             f.write("|{:^65}|{:^65}|{:^65}|\n".format('', b_value, c_value))
+print("Done!!!")
