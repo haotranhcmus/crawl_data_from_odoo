@@ -3,8 +3,11 @@ MÔ TẢ: Mình sẽ thu thập dữ liệu từ trang quiz odoo và lưu vào m
 --------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------
 Yêu cầu: kết nối mạng ổn định, google chrome, python, pip và thư viện selenium
+
 ======================Set up python========================
+
 https://code.visualstudio.com/docs/python/python-quick-start
+
 ================Cài đặt thư viện selenium==================
 1. Mở Terminal và thực thi lệnh pip install selenium
 ===================Hướng dẫn sử dụng=======================
