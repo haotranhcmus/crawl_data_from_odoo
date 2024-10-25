@@ -37,7 +37,7 @@ with open("quiz_text.txt", "r", encoding="utf-8") as file:
 # Ghi các câu hỏi đã lọc vào file list_question.txt
 with open("list_question.txt", "w", encoding="utf-8") as file:
         file.write(question)
-with open("answer.txt", "w", encoding="utf-8") as file:
+with open("list_answer.txt", "w", encoding="utf-8") as file:
         file.write(answer)
 
 list = []
@@ -54,7 +54,7 @@ for i in dapan:
 
 num = 0
 list_answer = ["\n"]
-with open("answer.txt", "r", encoding="utf-8") as file:
+with open("list_answer.txt", "r", encoding="utf-8") as file:
     # Biến lưu trữ các câu hỏi đã lọc
     answer = "\n"
     index = -1
@@ -67,7 +67,7 @@ with open("answer.txt", "r", encoding="utf-8") as file:
             answer += line
             list_answer.append(line)
         num += 1
-with open("list_answer.txt", "w", encoding="utf-8") as file:
+with open("list_list_answer.txt", "w", encoding="utf-8") as file:
         file.write(answer)
 
 import csv
@@ -107,8 +107,8 @@ import pandas as pd
 with open('list_question.txt', 'r', encoding='utf-8') as f:
     output_lines = [line.strip() for line in f if line.strip()]  # Bỏ qua dòng trống
 
-# Đọc nội dung file list_answer.txt và bỏ qua dòng đầu tiên
-with open('list_answer.txt', 'r', encoding='utf-8') as f:
+# Đọc nội dung file list_list_answer.txt và bỏ qua dòng đầu tiên
+with open('list_list_answer.txt', 'r', encoding='utf-8') as f:
     listanswer_lines = [line.strip() for line in f.readlines()[1:] if line.strip()]  # Bỏ qua dòng trống
 
 # Lấy dòng đầu tiên của list_question.txt cho cột A, các dòng còn lại cho cột B
