@@ -1,9 +1,8 @@
 # crawl_data_from_odoo
---------------------------------------------------------------------------------------------------------------------------
 MÔ TẢ: Mình sẽ thu thập dữ liệu từ trang quiz odoo và lưu vào một file txt, sau đó nhập đáp án và lưu kết quả vào file csv 
-
-Yêu cầu: kết nối mạng ổn định, google chrome, python, pip và thư viện selenium
 --------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+Yêu cầu: kết nối mạng ổn định, google chrome, python, pip và thư viện selenium
 ======================Set up python========================
 https://code.visualstudio.com/docs/python/python-quick-start
 ================Cài đặt thư viện selenium==================
