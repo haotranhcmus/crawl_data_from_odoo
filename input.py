@@ -1,16 +1,14 @@
 import re
 path = input("Nhap url: ")
-if 'slide/' in path:
-    path = path.split('slide/')[1]  # Giữ lại phần sau 'slide/'
 
-# Bước 2: Loại bỏ 4 số cuối cùng và phần sau đó
-path = re.sub(r'-\d{4}.*', '', path)
+# Sử dụng regex để xóa đoạn từ đầu đến "slide/" và từ "?" đến cuối
+result = re.sub(r'^.*slide/', '', path)
+result = re.sub(r'-\d+\?.*$', '', result)
 
-# Bước 3: Thay dấu '-' bằng dấu cách
-path = path.replace('-', ' ')
+# Viết hoa toàn bộ và thay dấu '-' bằng dấu cách
+result = result.replace('-', ' ').upper()
 
-# Bước 4: Viết hoa toàn bộ chữ cái
-path = path.upper()
+path = result
 
 with open("quiz_text.txt", "r", encoding="utf-8") as file:
     # Biến lưu trữ các câu hỏi đã lọc
@@ -49,9 +47,10 @@ for i in dapan:
         list.append(1)
     elif(i == 'c'):
         list.append(2)
-    else:
+    elif(i == 'd'):
         list.append(3)
-
+    else:
+        list.append(4)
 num = 0
 list_answer = ["\n"]
 with open("list_answer.txt", "r", encoding="utf-8") as file:
@@ -143,4 +142,3 @@ with open('data.txt', 'a', encoding='utf-8') as f:
         # Chỉ ghi dòng nếu cột B hoặc C có nội dung
         if b_value or c_value:
             f.write("|{:^65}|{:^65}|{:^65}|\n".format('', b_value, c_value))
-print("Done!!!")
