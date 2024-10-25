@@ -12,6 +12,7 @@ https://code.visualstudio.com/docs/python/python-quick-start
 1. Mở Terminal và thực thi lệnh pip install selenium
 
 ===================Hướng dẫn sử dụng=======================
+
 Bước 1: Chạy file crawl.py để thu thập dữ liệu từ trang quiz odoo gồm toàn bộ văn bản có trong trang này.
       1. Nhập đường dẫn tới trang quiz Odoo VD: https://www.odoo.com/vi_VN/slides/slide/chart-of-accounts-6834?fullscreen=1&quiz=1#
       2. Lưu ý: Đường dẫn này phải dẫn đến trang như hình sau: 
